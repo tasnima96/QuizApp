@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: lightgreen;
+}
+
+.inner-div{
+    width: 40vw;
+    background-color: lightskyblue;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+.inner-div h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 1.5rem 0 4rem 0;
+}
+
+.inner-div li{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+input{
+    cursor: pointer;
+}
+
+#submit, .btn{
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    /* text-transform: uppercase; */
+    color: white;
+    background-color: #a29bfe;
+    margin-top: 4rem;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #6c5ce7;
+}
+
+#score h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#score .btn{
+    margin-top: 2rem;
+    background-color: #55efc4;
+    color: #2d3436;
+}
+
+#score .btn:hover{
+    background-color: #00b894;
+    color: white;
+    cursor: pointer;
+}
+
+#score{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+.score-box{
+    display: none;
+}
+
+/* Start Page */
+
+.main-page{
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+.upper-div h1{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.upper-div span{
+    color: blue;
+    font-weight: bold;
+}
+
+.upper-div p,
+.note p{
+    font-size: 15px;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 100%;
+}
+
+.note span{
+    color: red;
+}
+
+.lower-div{
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-div button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 1rem;
+    background-color: #48dbfb;
+    color: white;
+    font-weight: bold;
+}
+
+.lower-div button:hover{
+    cursor: pointer;
+    background-color: #0abde3;
+}
+
+/* Score Page */
+
+
+
+/* Rules Page */
+.rules{
+    background-color: lightskyblue;
+    border: none;
+    outline: none;
+}
+
+.rules h3{
+    color: blue;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.rules p{
+    font-size: medium;
+}
+
+.rule-btn button{
+    font-size: small;
+    font-weight: bold;
+}
+
+
+/* Timer  */
+
+.container{
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    color: red;
+    margin-top: 20px;
+}
+
+.container h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* PopUp TimeOut Box */
+
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: #03549a;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup h2{
+  margin-top: -20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.popup span{
+    color: red;
+}
+
+.popup p{
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+
+/* Start media query */
+
+@media (max-width: 700px) {
+
+    .main-page {
+        /* width: 100vw; */
+        /* min-height: 100vh; */
+        padding-top: 3rem;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        background-color: lightgreen;
+    }
+
+    .image {
+        display: block;
+        /* margin-left: 50%; */
+        margin-right: 60%;
+        width: 50%;
+        height: 100%;
+    }
+
+    .upper-div h1 {
+        /* margin-top: 5px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 15px; */
+        font-size: large;
+    }
+
+    .inner-div {
+        width: 100vw;
+        background-color: lightskyblue;
+        padding: 3rem 8rem;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZLAND</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main-div">
+        <div class="container">
+            <h1>00:00</h1>
+        </div>
+
+        <div class="popup">
+            <!-- <button id="close">&times;</button> -->
+            <h2><span>TIMES UP!</span></h2>
+            <p>
+                Unfortunately, your time is up. If you were not able to finish the quiz by that given time, you have to retake the quiz. 
+            </p>
+            <a href="start.html">START AGAIN</a>
+        </div>
+
+        <div class="inner-div">
+            <h2 class="ques">Q1. How long have you been here?</h2>
+            <ul>
+                <!-- Sob input tag er vitore name="answer" same use korle 1 ta option select kora jabe. Multiple option select korar jonno name="..." different hobe.  -->
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1">Bangladesh</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">Bangladesh</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3">Bangladesh</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4">Bangladesh</label>
+                </li>
+            </ul>
+
+            <button id="submit">SUBMIT</button>
+
+            <div id="score" class="score-box"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener("load", function(){
+            setTimeout(function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        600000 
+    )
+});
+    </script>
+    <script src="index.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
